@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Manrope';
+    @apply text-zinc-200
+  }
+}
+
+#hero {
+  background-color: #000;
+  background-image: url('./assets/blur-mobile.png');
+  background-position: center 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.neon-text-violet {
+  text-shadow: 2px 0 0 rgb(124 58 237),
+  -2px 0 0 rgb(124 58 237),
+  0 2px 0 rgb(124 58 237),
+  0 -2px 0 rgb(124 58 237),
+  1px 1px rgb(124 58 237),
+  -1px -1px 0 rgb(124 58 237),
+  1px -1px 0 rgb(124 58 237),
+  -1px 1px 0 rgb(124 58 237);
+}
+
+@media (min-width: 768px) {
+  #hero {
+    background-image: url('./assets/blur-1.png'), url('./assets/blur-2.png');
+    background-position: -300px 100px, 300px -300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: indigo; */
+  }
+}

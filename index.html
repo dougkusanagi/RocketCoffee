@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Vite App</title>
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section id="hero" class="min-h-screen">
+    <header class="w-full lg:container flex justify-between items-center py-6 border-b border-b-zinc-800 md:border-b-0 md:mx-auto overflow-hidden">
+      <div id="logos" class="ml-6 md:mt-8">
+        <a href="#">
+          <img src="./assets/logo-mobile.svg" alt="logo-rocket-coffee" class="sm:hidden ">
+        </a>
+      
+        <a href="#">
+          <img src="./assets/logo-desktop.svg" alt="logo-rocket-coffee" class="hidden sm:block">
+        </a>
+      </div>
+
+      <nav id="navbar-top" class="absolute flex flex-col sm:relative sm:flex sm:flex-row md:mt-8 w-full sm:w-auto top-0 mt-20 sm:mt-0 sm:mr-4 text-zinc-500 md:text-white bg-black md:bg-transparent hidden">
+        <a class="px-4 py-4 border-b border-b-zinc-800 hover:text-zinc-300 hover:font-bold border-l-4 border-l-transparent hover:border-l-violet-800 sm:border-l-0 align-middle sm:border-b-0 mt-2 sm:mt-0" href="#">
+          Home
+        </a>
+
+        <a class="px-4 py-4 border-b border-b-zinc-800 hover:text-zinc-300 hover:font-bold border-l-4 border-l-transparent hover:border-l-violet-800 sm:border-l-0 align-middle sm:border-b-0" href="#">
+          Menu
+        </a>
+
+        <a class="px-4 py-4 border-b border-b-zinc-800 hover:text-zinc-300 hover:font-bold border-l-4 border-l-transparent hover:border-l-violet-800 sm:border-l-0 align-middle sm:border-b-0" href="#">
+          Recompensas
+        </a>
+
+        <a class="px-4 py-4 border-b border-b-zinc-800 hover:text-zinc-300 hover:font-bold border-l-4 border-l-transparent hover:border-l-violet-800 sm:border-l-0 align-middle sm:border-b-0" href="#">
+          Gift Cards
+        </a>
+
+        <a class="px-4 py-4 border-b border-b-zinc-800 hover:text-zinc-300 hover:font-bold border-l-4 border-l-transparent hover:border-l-violet-800 sm:border-l-0 align-middle sm:border-b-0" href="#">
+          Lojas
+        </a>
+      </nav>
+
+      <a id="menu-burguer" href="#" class="px-2 py-4 mr-4 sm:hidden">
+        <img src="./assets/menu-burguer-open.svg" alt="menu-burguer-open">
+      </a>
+
+      <a href="#" class="hidden md:inline-flex text-center text-sm items-center rounded-lg border-2 border-violet-600 py-2 px-8 md:mr-6 md:mt-8">
+        PEGAR MEU CAFÉ
+
+        <svg width="8" height="13" class="w-4 h-4 ml-2" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.414 12.207L7.121 6.49997L1.414 0.792969L0 2.20697L4.293 6.49997L0 10.793L1.414 12.207Z" fill="white"/>
+        </svg>
+      </a>
+    </header>
+
+    <article class="px-8 mt-24 md:hidden">
+      <h1 class="text-center text-3xl mt-2 font-semibold leading-normal">
+        O café que fará seu código decolar para o próximo nível.
+      </h1>
+    </article>
+
+    <article class="flex justify-center mt-24 md:hidden">
+      <a href="#" class="text-center text-sm inline-flex items-center rounded-lg border-2 border-violet-600 py-2 px-8">
+        PEGAR MEU CAFÉ
+
+        <svg width="8" height="13" class="w-4 h-4 ml-2" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.414 12.207L7.121 6.49997L1.414 0.792969L0 2.20697L4.293 6.49997L0 10.793L1.414 12.207Z" fill="white"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="mt-24 md:mt-40">
+      <h2 class="text-center text-5xl md:text-8xl font-bold leading-tight">
+        Great Coffee
+        <br>
+        <span class="text-black neon-text-violet">
+          &lt;Great Code/&gt;
+        </span>
+      </h2>
+    </article>
+    
+    <div class="mt-8">
+      <img src="./assets/rocket-coffee.png" alt="rocket-coffe" class="mx-auto">
+    </div>
+  </section>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
